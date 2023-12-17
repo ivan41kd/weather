@@ -1,0 +1,24 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  background: linear-gradient(110deg, rgb(56 56 56) 0%, rgb(26 25 25) 100%);
+  background-size: 100% 100%;
+  color: white;
+  transition: 0.5s;
+}
+
+body.light {
+  color: #292929;
+  transition: 0.5s;
+  background: linear-gradient(113deg, #fff 0.28%, rgb(70 97 115) 178.65%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}

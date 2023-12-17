@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./css/scss/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./js/app.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <section class="dashboard">
+          <div class="dashboard__wrapper">
+            <article class="dashboard-top">
+              <div class="dashboard-top__wrapper">
+                <div class="dashboard__mode-wrapper">
+                  <div class="dashboard__toggle">
+                    <span class="dashboard__toggle-indicator"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <circle cx="15" cy="15" r="15" fill="#111111" />
+                      </svg>
+                    </span>
+                  </div>
+                  <h3 class="dashboard__toggle-title">Dark Mode</h3>
+                </div>
+                <div class="dashboard__search">
+                  <form action="" class="dashboard__form">
+                    <div class="dashboard__search-wrapper">
+                      <img
+                        src="./img/search/search 1.png"
+                        alt="search"
+                        class="dashboard__search-icon"
+                      />
+                      <input
+                        type="text"
+                        class="dashboard__input"
+                        placeholder="Search for your preffered city..."
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="dashboard__location-wrapper">
+                  <img
+                    src="./img/location/location.png"
+                    alt="location"
+                    class="dashboard__location-icon"
+                  />
+                  <h1 class="dashboard__location-title">Current Location</h1>
+                </div>
+              </div>
+            </article>
+            <article class="dashboard__main">
+              <div class="dashboard__main-wrapper">
+                <div class="dashboard__info">
+                  <div class="dashboard__info-wrapper">
+                    <h1 class="dashboard__info-city">Empty</h1>
+                    <h3 class="dashboard__info-time">09:03</h3>
+                    <p class="dashboard__info-date">Thursday, 31 Aug</p>
+                  </div>
+                </div>
+                <div class="dashboard__weather">
+                  <div class="dashboard__main-details">
+                    <p class="dashboard__temp">Empty</p>
+                    <div class="dashboard__feels-wrapper">
+                      <p class="dashboard__feels">Feels like:</p>
+                      <p class="dashboard__feels-temp">Empty</p>
+                    </div>
+                    <div class="dashboard__sunrise-wrapper">
+                      <img
+                        src="./img/sun/sunrise.png"
+                        alt="sunrise"
+                        class="dashboard__sunrise-icon"
+                      />
+                      <div class="dashboard__text-time">
+                        <p class="dashboard__sunrise">Sunrise</p>
+                        <p class="dashboard__time sunrise">Empty</p>
+                      </div>
+                    </div>
+                    <div class="dashboard__sunset-wrapper">
+                      <img
+                        src="./img/sun/sunset.png"
+                        alt="sunset"
+                        class="dashboard__sunset-icon"
+                      />
+                      <div class="dashboard__text-time">
+                        <p class="dashboard__sunset">Sunset</p>
+                        <p class="dashboard__time sunset">Empty</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dashboard__type-weather">
+                    <img
+                      src="./img/weather/clear 1.png"
+                      alt="weather"
+                      class="dashboard__type-weather-icon"
+                    />
+                    <p class="dashboard__type-weather-name">Sunny</p>
+                  </div>
+                  <div class="dashboard__extra-details">
+                    <div class="dashboard__detail">
+                      <img
+                        src="./img/details/humidity.png"
+                        alt="humidity"
+                        class="dashboard__detail-icon"
+                      />
+                      <p class="dashboard__detail-amount humidity">41%</p>
+                      <p class="dashboard__detail-name">Humidity</p>
+                    </div>
+                    <div class="dashboard__detail">
+                      <img
+                        src="./img/details/wind.png"
+                        alt="wind"
+                        class="dashboard__detail-icon"
+                      />
+                      <p class="dashboard__detail-amount wind">2km/h</p>
+                      <p class="dashboard__detail-name">Wind Speed</p>
+                    </div>
+                    <div class="dashboard__detail">
+                      <img
+                        src="./img/details/pressure.png"
+                        alt="pressure"
+                        class="dashboard__detail-icon"
+                      />
+                      <p class="dashboard__detail-amount pressure">997hPa</p>
+                      <p class="dashboard__detail-name">Pressure</p>
+                    </div>
+                    <div class="dashboard__detail">
+                      <img
+                        src="./img/details/uv.png"
+                        alt="uv"
+                        class="dashboard__detail-icon"
+                      />
+                      <p class="dashboard__detail-amount uv">8</p>
+                      <p class="dashboard__detail-name">UV</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="dashboard__forecast">
+              <div class="dashboard__forecast-wrapper">
+                <div class="dashboard__forecast-5days">
+                  <h3 class="dashboard__forecast-5days-title">
+                    5 Days Forecast:
+                  </h3>
+                  <div class="dashboard__forecast-5days-wrapper"></div>
+                </div>
+                <div class="dashboard__forecast-hourly">
+                  <h3 class="dashboard__forecast-hourly-title">
+                    Hourly Forecast:
+                  </h3>
+                  <div class="dashboard__forecast-hourly-wrapper"></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
